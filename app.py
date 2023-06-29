@@ -3,8 +3,9 @@ import yfinance as yf
 import pandas as pd
 from datetime import datetime, timedelta
 import altair as alt
+import tensorflow
 from sklearn.preprocessing import MinMaxScaler
-import re
+
 import numpy as np
 stock_data=pd.read_csv("stockticker_new2.csv")
 company_list=stock_data['company'].tolist()
